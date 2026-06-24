@@ -17,6 +17,6 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           git config --global user.email "farahhanif723@gmail.com"
-          git config --global user.name "Farah765"
-          git remote add hf https://Farah765:$HF_TOKEN@huggingface.co/spaces/Farah765/loaniq-credit-scoring
+          git config --global user.name "FarahHanif723"
+          git remote add hf https://FarahHanif723:$HF_TOKEN@huggingface.co/spaces/Farah765/loaniq-credit-scoring
           git push hf main --force
