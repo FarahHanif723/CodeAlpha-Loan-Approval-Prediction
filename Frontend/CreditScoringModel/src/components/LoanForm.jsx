@@ -20,8 +20,8 @@ export default function LoanForm({ form, onChange }) {
   return (
     <Card label="💼 Loan Details">
       <Grid cols={3}>
-        <Field label="Loan Amount ($)">
-          <Input type="number" value={form.loan_amnt} onChange={v => set("loan_amnt", v)} min={500} max={100000} />
+        <Field label="Loan Amount ($)" hint="Max $28,000">
+          <Input type="number" value={form.loan_amnt} onChange={v => set("loan_amnt", v)} min={500} max={28000} />
         </Field>
         <Field label="Interest Rate (%)">
           <Input type="number" value={form.int_rate} onChange={v => set("int_rate", v)} min={1} max={40} step="0.1" />
