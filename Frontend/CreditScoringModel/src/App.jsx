@@ -6,7 +6,7 @@ import LoanForm      from "./components/LoanForm";
 import ResultCard    from "./components/ResultCard";
 import { SubmitButton } from "./components/UI";
 
-const API = "http://localhost:8000";
+const API = "https://farah765-loaniq-credit-scoring.hf.space";
 
 const INITIAL_FORM = {
   age: "30", income: "50000", home: "RENT", emp_len: "3",
