@@ -3,7 +3,7 @@
 An **end-to-end Machine Learning-based Loan Approval Prediction System** developed during my **CodeAlpha Machine Learning Internship**. This project predicts whether a loan application is likely to be approved based on applicant details using a trained Machine Learning model.
 
 The application features a modern **React.js** frontend, a **FastAPI** backend, and a Machine Learning model built with **Python** and **Scikit-learn**.
-
+## Live Deploy:- https://farah765-loaniq-credit-scoring.hf.space
 ##  Features
 
 * Predicts loan approval eligibility using Machine Learning
