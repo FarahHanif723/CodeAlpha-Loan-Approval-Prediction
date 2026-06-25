@@ -13,8 +13,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model  = joblib.load("Model/credit_scoring_model.pkl")
-scaler = joblib.load("Model/scaler.pkl")
+model  = joblib.load("credit_scoring_model.pkl")
+scaler = joblib.load("scaler.pkl")
 
 # ── Exact same encoding as notebook ──
 HOME_MAP    = {"RENT": 0, "OWN": 1, "MORTGAGE": 2, "OTHER": 3}
