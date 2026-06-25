@@ -18,7 +18,7 @@ jobs:
           git config --global user.name "FarahHanif723"
           git clone https://Farah765:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Farah765/loaniq-credit-scoring hf_repo
           cd hf_repo
-          rsync -av --exclude='*.pkl' --exclude='*.joblib' --exclude='.git' $GITHUB_WORKSPACE/ .
+         rsync -av --exclude='*.pkl' --exclude='*.joblib' --exclude='.git' --exclude='hf_repo' $GITHUB_WORKSPACE/ .
           git add .
           git commit -m "Sync from GitHub" || echo "Nothing to commit"
           git push
