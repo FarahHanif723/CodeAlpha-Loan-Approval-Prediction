@@ -26,10 +26,18 @@ export const themes = {
 };
 
 export function ThemeProvider({ children }) {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(
+    () => localStorage.getItem("theme") === "dark"
+  );
+
+  const toggleDark = (val) => {
+    setDark(val);
+    localStorage.setItem("theme", val ? "dark" : "light");
+  };
+
   const t = dark ? themes.dark : themes.light;
   return (
-    <ThemeContext.Provider value={{ t, dark, setDark }}>
+    <ThemeContext.Provider value={{ t, dark, setDark: toggleDark }}>
       {children}
     </ThemeContext.Provider>
   );
